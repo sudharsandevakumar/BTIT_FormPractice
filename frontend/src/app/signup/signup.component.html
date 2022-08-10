@@ -1,0 +1,53 @@
+<div class="login-container">
+  <div class="signup">
+    <h1>Sign Up</h1>
+    <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
+      <label>
+        First Name:
+        <input
+          class="ipbox"
+          type="text"
+          formControlName="firstName"
+          placeholder="Enter First Name"
+        />
+      </label>
+      <label>
+        Last Name:
+        <input
+          class="ipbox"
+          type="text"
+          formControlName="lastName"
+          placeholder="Enter Last Name"
+        />
+      </label>
+      <label>
+        Age:
+        <input
+          class="ipbox"
+          type="number"
+          formControlName="age"
+          placeholder="Enter Age"
+        />
+      </label>
+      <label>
+        Password:
+        <input
+          class="ipbox"
+          type="password"
+          formControlName="password"
+          placeholder="Enter Password"
+        />
+      </label>
+      <button
+        (click)="handleButtonClick()"
+        class="sbt-btn"
+        type="submit"
+        [disabled]="!userProfileForm.valid"
+      >
+        Sign Up
+      </button>
+
+      <a class="login-btn" routerLink="/login">Go to login</a>
+    </form>
+  </div>
+</div>

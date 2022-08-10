@@ -1,0 +1,72 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+}
+.signup {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+
+  height: 500px;
+}
+
+.ipbox {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(174, 174, 174);
+}
+label {
+  font-size: large;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.signup form label {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sbt-btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.sbt-btn:hover {
+  background-color: rgb(0, 223, 178);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  border-radius: 5px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10%;
+  height: 100vh;
+}

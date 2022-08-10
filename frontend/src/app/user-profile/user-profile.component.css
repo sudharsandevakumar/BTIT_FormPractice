@@ -1,0 +1,26 @@
+* {
+  font-family: monospace;
+  font-size: 25px;
+}
+.userprofile {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.usercard {
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.usercard__option {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="signup">
+    <h1>Login</h1>
+    <form [formGroup]="userProfileForm" (ngSubmit)="handleLogin()">
+      <label>
+        email:
+        <input
+          class="ipbox"
+          type="email"
+          formControlName="email"
+          placeholder="Enter email"
+        />
+      </label>
+
+      <label>
+        Password:
+        <input
+          class="ipbox"
+          type="password"
+          formControlName="password"
+          placeholder="Enter Password"
+        />
+      </label>
+
+      <button class="sbt-btn" type="submit" [disabled]="!userProfileForm.valid">
+        LOGIN
+      </button>
+
+      <a class="signup-btn" routerLink="/signup">CREATE A NEW ACCOUNT</a>
+    </form>
+  </div>
+</div>
